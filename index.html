@@ -3,166 +3,241 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="roughh.css" /> -->
+    <link
+      rel="shortcut icon"
+      href="2799196_bonfire_camping_fire_light_outdoor_icon.png"
+      type="image/x-icon"
+    />
+    <title>Simaran's Diwali Card</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .content {
+        width: 42%;
+        padding: 0 6px 10px 10px;
+        position: relative;
+        height: 480px;
+      }
+      .textContainer {
+        position: absolute;
+        bottom: 60%;
+        left: 24%;
+      }
+
+      #diwali-light-strap li {
+        position: relative;
+        list-style: none;
+        margin: 0 24px;
+
+        padding: 0;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+
+        animation-name: even-flash;
+        animation-duration: 2.5s;
+        animation-delay: 0.4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+      }
+
+      .content span:nth-of-type(1) {
+        font-size: 3.25rem;
+        margin-right: 4px;
+        color: rgb(198, 0, 0);
+      }
+      /* Targets the second <span> in .content */
+      .content span:nth-of-type(2) {
+        font-size: 3.25rem;
+        color: rgb(216, 216, 0);
+      }
+      /* Targets the third <span> in .content */
+      .content span:nth-of-type(3) {
+        letter-spacing: 0.37em;
+        font-size: 3.25rem;
+        color: rgb(198, 0, 0);
+      }
+
+      #diwali-light-strap {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        white-space: nowrap;
+        overflow: clip;
+        height: 55px;
+      }
+
+      #diwali-light-strap li:nth-child(odd) {
+        animation-name: odd-flash;
+        animation-duration: 1.5s;
+        animation-delay: 0.6s;
+      }
+
+      .content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("https://s1.gifyu.com/images/SOyy6.gif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.67; /* Adjust background opacity */
+        z-index: -1; /* Places the background behind content */
+      }
+
+      @keyframes odd-flash {
+        50% {
+          background: #f57200;
+          box-shadow: 0 2px 20px 8px #fe7700c1;
+        }
+        0%,
+        100% {
+          background: rgba(255, 141, 42, 0.608);
+          box-shadow: 0 2px 20px 8px #fba55aa2;
+        }
+      }
+
+      @keyframes even-flash {
+        0%,
+        100% {
+          background: #da8fff;
+          box-shadow: 0 2px 20px 2px #aa00ff;
+        }
+        50% {
+          background: rgba(255, 31, 161, 0.945);
+          box-shadow: 0 2px 34px 6px rgba(224, 0, 131, 0.573);
+        }
+      }
+
+      @media (min-width: 330px) and (max-width: 574px) {
+        .content {
+          width: 82%; /* width on small screens */
+          padding: 5px;
+        }
+
+        .textContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          bottom: 46%; /* Adjusted for better spacing */
+          left: 19%; /* Centered for smaller screens */
+        }
+
+        .content span:nth-of-type(1),
+        .content span:nth-of-type(2),
+        .content span:nth-of-type(3) {
+          font-size: 2.75rem;
+          letter-spacing: 0.24em; /* Further reduced font size */
+        }
+
+        #diwali-light-strap li {
+          margin: 0 14.5px; /* Compact for small screens */
+        }
+      }
+
+      @media (max-width: 800px) and (min-width: 574.1px) {
+        .content {
+          width: 60%; /* Full width on medium screens */
+          padding: 5px;
+        }
+        .textContainer {
+          position: absolute;
+          bottom: 60%;
+          left: 20%;
+        }
+
+        .content span:nth-of-type(1) {
+          font-size: 2.85rem;
+          margin-right: 20px;
+          color: rgb(198, 0, 0);
+        }
+        /* Targets the second <span> in .content */
+        .content span:nth-of-type(2) {
+          font-size: 2.85rem;
+        }
+        /* Targets the third <span> in .content */
+        .content span:nth-of-type(3) {
+          letter-spacing: 0.29em;
+          font-size: 2.85rem;
+          color: rgb(198, 0, 0);
+        }
+
+        #diwali-light-strap li {
+          margin: 0 19px; /* Compact for medium screens */
+        }
+      }
+
+      @media (min-width: 800.1px) and (max-width: 1024px) {
+        .content {
+          width: 54%; /*  width on small desktop */
+          padding: 5px;
+        }
+        .textContainer {
+          position: absolute;
+          bottom: 60%;
+          left: 20%;
+        }
+
+        .content span:nth-of-type(1) {
+          font-size: 3rem;
+          margin-right: 18px;
+          color: rgb(198, 0, 0);
+        }
+        .content span:nth-of-type(2) {
+          font-size: 3rem;
+        }
+        .content span:nth-of-type(3) {
+          letter-spacing: 0.34em;
+          font-size: 3rem;
+          color: rgb(198, 0, 0);
+        }
+
+        #diwali-light-strap li {
+          margin: 0 22px; /* Compact for medium screens */
+        }
+      }
+    </style>
   </head>
   <body>
-        <!-- Header Section: Contains the main title and a brief description -->
-    <header>
-        <div class="headerData">
-                        <!-- Main title of the blog -->
-            <h1>Shubham Codes: Crafting the web</h1>
-                        <!-- Short description or tagline -->
-            <span><em>Exploring full stack development, one line at a time.</em></span>
-            <!-- Additional description about your blog -->
-            <span>Dive deep into the ever-evolving world of web development. As a
-            passionate full-stack developer, I explore both the front-end & back-end
-            technologies that power modern websites</span>
-        </div>
-    </header>
-    <main>
-        <!-- Navigation Bar: Provides links to different sections of the page -->
-
-        <nav>
-          <ul>
-            <!-- Each list item links to an ID (section) in the page -->
-
-            <li><a href="#aboutMe">About Me</a></li>
-            <li><a href="#blog1">React</a></li>
-            <li><a href="#blog2">DSA</a></li>
-            <li><a href="#blog3">JavaScript</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <!-- About Me Section: Brief summary about yourself and your goals -->
-    <section id="aboutMe">
-        <h2>About me summary</h2>
-        <p>
-        As an aspiring full stack engineer, I am eager to leverage my current
-        knowledge and expand my skill set by joining an organisation that
-        fosters growth and encourages innovation. With a passion for clean &
-        maintainable code, I'm committed to delivering efficient & user friendly
-        solutions that drive business success.
-    </p>
-      <p>
-        From HTML, CSS, and JavaScript to Node.js and the latest frameworks,
-        this blog showcases my journey of mastering the art of coding. Here,
-        you’ll find insightful blog posts that cover a wide range of topics—from
-        web design principles and responsive layouts to complex backend logic
-        and database management. Whether I’m sharing personal experiences,
-        breaking down coding challenges, or offering tutorials, my goal is to
-        inspire and help fellow developers craft their own web projects. This
-        blog reflects not just my technical knowledge but also my creative
-        process, where coding becomes an art form. Join me as I continually
-        learn, build, and share ideas that help shape the future of the web, one
-        line of code at a time.
-      </p>
-    </section>
-
-    <section id="blog1">
-        <!-- Blog Post 1: React File/Directory Structure -->
-      <h2>Delightful React File/Directory Structure</h2>
-      <span
-        >How should we structure components and other files in our React apps?
-        I've iterated my way to a solution I'm really happy with. In this blog
-        post, I'll share how it works, what the tradeoffs are, and how I
-        mitigate them.</span>
-            <!-- Image and embedded YouTube video related to React -->  
-      <div class="imgAndVid">
-      <img src="./img/1625909824541.png" alt="react" />
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ANrYhHN8Dl4?si=bQy2yUdGvqSw9Nqn" frameborder="0" allowfullscreen></iframe>
+    <div class="content">
+      <ul id="diwali-light-strap">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="textContainer">
+        <span>Happy</span>
+        <span>Diwali</span>
+        <br />
+        <br />
+        <span>Simran</span>
+      </div>
     </div>
-      <p>
-        In terms of organization, I want things to be organized by function, not
-        by feature. I want a “components” directory, a “hooks” directory, a
-        “helpers” directory, and so on. Sometimes, a complex component will have
-        a bunch of associated files. These include: 
-        <ul>
-            <li>
-        "Sub-components", smaller components used exclusively by the main component</li>
-        <li>Helper functions</li>
-        <li>Custom hooks</li>
-        <li>Constants or data shared between the component and its
-        associated files</li>
-    </ul>
-      </p>
-    </section>
-        <!-- Another blog post from the nav bar Data Structures & Algorithms -->
-    <section id="blog2">
-      <h2>Introduction to Abstract Data Types in Data Structures & Algorithms</h2>
-      <span
-        >An Abstract Data Type (ADT), as the name suggests, is an abstract understanding of a data structure. An ADT is defined through its behavior and characteristics, particularly in terms of what data can be stored into it, the operations that can be performed on this data, and the behavior of these operations.</span>
-      <div class="imgAndVid">
-      <img src="./img/images.png" alt="js" />
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/wy0TPi9M7VM?si=OGGJeJYQgjWcHLiH" frameborder="0" allowfullscreen></iframe>
-    </div>
-      <p>
-        General operations supported by ADTs support the follow operations:
-        <ul>
-            <li>Traversing, which allows each element in the ADT to be accessed once for processing.</li>
-            <li>Searching, which allows the user to look for a specific element in the ADT.</li>
-            <li>Inserting, which allows the user to insert an element at a particular index/space in the ADT.</li>
-            <li> Deleting, which allows the user to either delete a particular element or delete an element at a particular location.</li>
-            <li>Sorting, which allows the elements to be ordered in ascending or descending order, depending on the preference.</li>
-        </ul>
-      </p>
-    </section>
-            <!-- Blog Post about Javascript ES6 Modules -->
-    <section id="blog3">
-      <h2>Implementing Modules using ES6 Syntax      </h2>
-      <span
-        >Modules are reusable pieces of code in a file that can be exported and then imported for use in another file. A modular program is one whose components can be separated, used individually, and recombined to create a complex system.</span>
-      <div class="imgAndVid">
-      <img src="./img/1624595838012.png" alt="Js" />
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/nZ1DMMsyVyI?si=NzTc7zr2_DwCx-4V" frameborder="0" allowfullscreen></iframe>
-    </div>
-      <p>
-        You might have seen the term “ES6” or “JavaScript ES6” and wondered what it actually means. Well wonder no further, because we’re going to dive into what ES6 is and how it relates to JavaScript!
-        <br>First, let’s bring in some history. JavaScript was introduced in 1995 by the company Netscape Communications as a scripting language for web designers and programmers to interact with web pages. The next year, Netscape submitted JavaScript to a standards developing organization called Ecma International to create standards for a scripting language (a type of programming language). In 1997, Ecma International released ECMA-262 which sets standards for the first version of a scripting language called ECMAScript, shortened to ES.
-        <br>These new ECMAScript standards provided rules for the architecture of JavaScript features. As new programming paradigms emerged and developers sought new features, newer versions of ECMAScript provided a basis for consistency between new and old JavaScript versions.
-       
-      </p>
-    </section>
-        <!-- Contact Form Section: Allows visitors to reach out via a form -->
-    <section aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Contact Me</h2>
-        <p>If you have any questions or just want to get in touch, feel free to send a message!</p>
-      
-        <form action="/submit" method="POST">
-          <fieldset id="contact">
-            <legend>Contact Me</legend>
-      
-            <div class="inputFields">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required />
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required />
-                <br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
-                <br>
-                <button type="submit">Send Message</button>
-            </div>
-                <!-- Social media links section -->
-            <div class="socialMedia">
-                <ul>
-                    <li><a href="https://github.com/shubhampaul" target="_blank"><img src="./icons/github.svg" alt="GitHub"></a></li>
-                    <li><a href="https://linkedin.com/in/shubhampaul" target="_blank"><img src="./icons/linkedin.svg" alt="LinkedIn"></a></li>
-                    <li><a href="https://twitter.com/shubhampaul" target="_blank"><img src="./icons/twitter.svg" alt="Twitter"></a></li>
-                </ul>
-            </div>
-          </fieldset>
-        </form>
-      </section>
-    </main>
-    <!-- Footer Section: Contains copyright information -->
-    <footer>
-        <div class="footer-content">
-          <p>&copy; 2024 Shubham Codes. All rights reserved.</p>
-          <p>Website crafted with passion by Shubham Paul.</p>
-        </div>
-      </footer>
   </body>
 </html>
