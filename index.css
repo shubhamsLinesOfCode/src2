@@ -1,0 +1,120 @@
+header span:nth-child(2){
+    display: block;
+}
+
+section h2{
+    padding: 5px;
+}
+
+section img{
+    width: 30%;
+    border-radius: 90px;
+}
+
+.imgAndVid{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-evenly;
+}
+
+section:nth-of-type(2) span{
+    margin-bottom: 10px;
+}
+
+fieldset {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialMedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socialMedia ul{
+    display: flex;
+    gap: 12px;
+}
+.socialMedia ul li{
+    list-style: none;
+}
+.socialMedia ul li a{
+    text-decoration: none;
+}
+
+fieldset button {
+    margin-top: 10px;
+}
+
+fieldset input:nth-of-type(1) {
+    margin-left: 15px;
+}
+
+fieldset input:nth-of-type(2) {
+        margin-left: 15px;
+}
+
+nav ul li {
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul:nth-of-type(1){
+    display: flex;
+    background: bisque;
+    justify-content: flex-end;
+    gap: 25px;
+    padding-right: 4px;
+    margin: 6px;
+}
+
+nav {
+    position: fixed;
+    top: 0; /* To make the navBar fixed at the top always while scrolling */
+    width: 100%;
+    background-color: bisque; /* Background color ensures the navbar is visible when scrolling */
+    padding: 1px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main section {
+    padding: 10px
+}
+body{
+    margin: 2px
+}
+
+nav a:active {
+    color: crimson; /* Color change when clicked */
+  }
+
+  header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  header h1{
+    text-shadow: 7px 5px 2.75px rgb(221, 213, 75);
+    font-size: 3em;
+  }
+
+  header div span {
+    font-size: 1.15em;}
+
+    .footer-content {
+        margin-top: 4px;
+        border-top: 1px solid grey;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-content p {
+        margin: 7px 0 4px 0;
+        font-size: 15px;
+    }
