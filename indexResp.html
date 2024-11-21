@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="indexResp.css" />
+    <link rel="stylesheet" href="soutput.css" />
+    <title>Document</title>
+  </head>
+  <body>
+        <!-- Header Section: Contains the main title and a brief description -->
+    <header>
+        <div class="headerData">
+                        <!-- Main title of the blog -->
+            <div class="title md:flex-row md:justify-center md:gap-2">
+              <h1 class="animatedTitle" title="Shubham Codes:">Shubham Codes: </h1>
+              <h1 class="animatedTitle2" title="Crafting the web">Crafting the web</h1>
+            </div>
+                        <!-- Short description or tagline -->
+            <span class="pl-2 text-justify"><em>Exploring full stack development, one line at a time.</em></span>
+            <!-- Additional description about your blog -->
+            <span class="pl-3">Dive deep into the ever-evolving world of web development. As a
+            passionate full-stack developer, I explore both the front-end & back-end
+            technologies that power modern websites</span>
+        </div>
+    </header>
+    <main>
+        <!-- Navigation Bar: Provides links to different sections of the page -->
+
+        <nav class="w-full">
+          <ul class="ulClass">
+            <!-- Each list item links to an ID (section) in the page -->
+
+            <li><a href="#aboutMe" class="hover:text-amber-700">AboutMe</a></li>
+            <li class="relative group">
+              <a href="#" class="hover:text-amber-700 group flex items-center gap-1">Blog Posts
+                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg class="transform group-hover:rotate-180 fill-current group-hover:text-amber-700 transition-transform" enable-background="new 0 0 48 48" height="16px" id="Layer_3" version="1.1" viewBox="0 0 48 48" width="16px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="0,12.438 48,12.438 24,35.562 "/></svg>
+              </a>
+              <ul class="absolute hidden group-hover:block text-slate-800 p-2 space-y-2 rounded shadow-lg">
+                <li><a href="#blog1" class="block px-4 py-2 hover:bg-gray-200 hover:text-amber-700">React</a></li>
+                <li><a href="#blog2" class="block px-4 py-2 hover:bg-gray-200 hover:text-amber-700">DSA</a></li>
+                <li><a href="#blog3" class="block px-4 py-2 hover:bg-gray-200 hover:text-amber-700">JavaScript</a></li>
+                <li><a href="#blog4" class="block px-4 py-2 hover:bg-gray-200 hover:text-amber-700">NodeJs</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact" class="hover:text-amber-700">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- About Me Section: Brief summary about yourself and your goals -->
+         <section id="aboutMe">
+          <h2 class="textDecoration ">About me summary</h2>
+          <p class="textDecoration2 first-line:tracking-widest
+          first-letter:text-7xl first-letter:font-medium first-letter:text-slate-900
+          first-letter:mr-3 first-letter:float-left"> As an aspiring full stack engineer, I am eager to leverage my current knowledge and expand my skill an organisation that fosters growth and encourages innovation. With a passion for clean & maintainable code, I'm committed to delivering efficient & user friendly solutions that drive business success.</p>
+          <p class="textDecoration2">From HTML, CSS, and JavaScript to Node.js and the latest frameworks,
+            this blog showcases my journey of mastering the art of coding. Here,
+            you’ll find insightful blog posts that cover a wide range of topics—from
+            web design principles and responsive layouts to complex backend logic
+            and database management. Whether I’m sharing personal experiences,
+            breaking down coding challenges, or offering tutorials, my goal is to
+            inspire and help fellow developers craft their own web projects. This
+            blog reflects not just my technical knowledge but also my creative
+            process, where coding becomes an art form. Join me as I continually
+            learn, build, and share ideas that help shape the future of the web, one
+            line of code at a time.</p>
+          </section>
+          
+          <div class="gridContainer ">
+            <section id="blog1" class="boxShadow custom-hover-translate bg-slate-100">
+              <!-- Blog Post 1: React File/Directory Structure -->
+              <h2 class="textDecoration">Delightful React File/Directory Structure</h2>
+              <span class="textDecoration2">How should we structure components and other files in our React apps? I've iterated my way to solution I'm really happy with. In this blog post, I'll share how it works, what the tradeoffs are, and how I mitigate them.</span>
+              <!-- Image and embedded YouTube video related to React -->
+              <div class="sm:flex sm:justify-center ">
+                <img class="w-full sm:w-1/2 rounded aspect-auto" src="./img/1625909824541.png" alt="react" />
+              </div>
+              <p class=" mb-0 text-base text-justify"> In terms of organization, I want things to be organized by function, not
+                by feature. I want a “components” directory, a “hooks” directory, a
+                “helpers” directory, and so on. Sometimes, a complex component will have
+                a bunch of associated files. These include:
+                <ul class="p-3">
+                  <li class="list-disc">"Sub-components", smaller components used exclusively by the main component</li>
+                  <li class="list-disc">Helper functions</li>
+                  <li class="list-disc">Custom hooks</li>
+                  <li class="list-disc">Constants or data shared between the component and its associated files</li>
+                </ul>
+              </p>
+              <div class="sm:flex sm:justify-center"> 
+                <iframe class="w-full sm:w-2/3 rounded aspect-video" src="https://www.youtube.com/embed/ANrYhHN8Dl4?si=bQy2yUdGvqSw9Nqn" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </section>
+            <!-- Another blog post from the nav bar Data Structures & Algorithms -->
+            <section id="blog2" class="boxShadow custom-hover-translate2 bg-slate-100">
+              <h2 class="textDecoration">Introduction to Abstract Data Types in Data Structures & Algorithms</h2>
+              <span class="textDecoration2">An Abstract Data Type (ADT), as the name suggests, is an abstract understanding of a data structure. An ADT is defined through its behavior and characteristics, particularly in terms of what data can be stored into it, the operations that can be performed on this data, and the behavior of these operations.
+              </span>
+              <div class="sm:flex sm:justify-center">
+              <img class="w-full sm:w-1/2 aspect-auto rounded" src="./img/images.png" alt="js" />
+            </div>
+            <p class=" mb-0 text-base text-justify">
+              General operations supported by ADTs support the follow operations:
+              <ul class="p-3" >
+                <li class="list-disc">Traversing, which allows each element in the ADT to be accessed once for processing.</li>
+                <li class="list-disc">Searching, which allows the user to look for a specific element in the ADT.</li>
+                <li class="list-disc">Inserting, which allows the user to insert an element at a particular index/space in the ADT.</li>
+              </ul>
+            </p>
+            <div class="sm:flex sm:justify-center">
+              <iframe class="w-full sm:w-2/3 aspect-video rounded" src="https://www.youtube.com/embed/wy0TPi9M7VM?si=OGGJeJYQgjWcHLiH" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            </section>
+            <!-- Blog Post about Javascript ES6 Modules -->
+            <section id="blog3" class="boxShadow custom-hover-translate bg-slate-100">
+              <h2 class="textDecoration">Implementing Modules using ES6 Syntax</h2>
+              <span class="textDecoration2">Modules are reusable pieces of code in a file that can be exported and then imported for use in another file. A modular program is one whose components can be separated, used individually, and recombined to create a complex system.</span>
+              <div class=" sm:flex sm:justify-center">
+              <img class="w-full sm:w-1/2 rounded" src="./img/1624595838012.png" alt="Js" />
+            </div>
+            <p class="textDecoration2">
+              You might have seen the term “ES6” or “JavaScript ES6” and wondered what it actually means. Well wonder no further, because we’re going to dive into what ES6 is and how it relates to JavaScript!
+              <br>These new ECMAScript standards provided rules for the architecture of JavaScript features. As new programming paradigms emerged and developers sought new features, newer versions of ECMAScript provided a basis for consistency between new and old JavaScript versions.
+            </p>
+            <div class="sm:flex sm:justify-center">
+              <iframe class="w-full sm:w-2/3 aspect-video rounded" src="https://www.youtube.com/embed/nZ1DMMsyVyI?si=NzTc7zr2_DwCx-4V" frameborder="0" allowfullscreen></iframe>
+            </div>
+            </section>
+            <section id="blog4" class="boxShadow custom-hover-translate bg-slate-100 p-3 flex flex-col">
+              <!-- Blog Title -->
+              <h2 class="textDecoration text-2xl font-semibold mb-4">The V8 JavaScript Engine</h2>
+              
+              <!-- Blog Description -->
+              <span class="textDecoration2 text-base mb-4">
+                A Node.js app runs in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.
+              </span>
+              
+              <!-- Image -->
+              <div class="sm:flex sm:justify-center mb-4">
+                <img class="w-full sm:w-1/2 rounded" src="./img/nodejs_frameworks_cover.png" alt="react" />
+              </div>
+          
+              <!-- Blog Paragraph with a list -->
+              <p class="textDecoration2 text-base mb-4">
+                Node.js has a unique advantage because millions of frontend developers that write JavaScript for the browser are now able to write the server-side code in addition to the client-side code without the need to learn a completely different language. In Node.js the new ECMAScript standards can be used without problems, as you don't have to wait for all your users to update their browsers - you are in charge of deciding which ECMAScript version to use by changing the Node.js version, and you can also enable specific experimental features by running Node.js with flags.
+              </p>
+          
+              <!-- Embedded YouTube video (iframe) -->
+              <div class="sm:flex sm:justify-center">
+                <iframe class="w-full sm:w-2/3 aspect-video rounded" src="https://www.youtube.com/embed/32M1al-Y6Ag?si=vTcRBKWZHD_8lz8b" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </section>
+          
+          </div>
+
+          <!-- Contact Form Section: Allows visitors to reach out via a form -->
+          <section aria-labelledby="contact-heading">
+            <h2 id="contact-heading" class="textDecoration">Contact Me</h2>
+            <p class="textDecoration2 pl-2">If you have any questions or just want to get in touch, feel free to send a message!</p>
+          
+            <form action="/submit" method="POST">
+              <fieldset id="contact">
+                <legend class="text-gray-500 font-medium">Contact Me form</legend>
+          
+                <div class="inputFields boxShadow w-full p-2">
+                    <label for="name" class=" block">Name:</label>
+                    <input class="w-full md:w-3/4 rounded border-2" type="text" id="name" name="name" placeholder="Your Name" required />
+                    <br>
+                    <label class="block" for="email">Email:</label>
+                    <input class="w-full md:w-3/4 rounded " type="email" id="email" name="email" placeholder="Your Email" required />
+                    <br>
+                    <label class="block" for="message">Message:</label>
+                    <textarea class="w-full md:w-3/4 rounded" id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+                    <br>
+                    <button class="min-w-36 sm:w-1/4 sm:max-w-40 rounded-lg btnn boxShadow hover:bg-sky-700 hover:text-indigo-50 hover:translate-x-0.5 hover:-translate-y-1 transition-transform duration-300" type="submit">Send Message</button>
+                </div>
+              </fieldset>
+            </form>
+          </section>
+    </main>
+    <!-- Footer Section: Contains copyright information -->
+    <footer class="bg-slate-300">
+        <div class="footer-content">
+          <p class="w-1/3 sm:max-w-fit">&copy; 2024 Shubham Codes. All rights reserved.</p>
+          <ul class="flexMed w-1/4 min-w-1 max-w-60 flex justify-around items-center">
+            <li >
+              <a href="https://github.com/shubhampaul" target="_blank">
+                <img class="h-5 w-5" src="./img/github_hub icon_icon.svg" alt="GitHub">
+              </a></li>
+            <li >
+              <a href="https://linkedin.com/in/shubhampaul" target="_blank">
+                <img class="h-5 w-5" src="./img/linked in_icon.svg" alt="LinkedIn"></a></li>
+            <li >
+              <a href="https://twitter.com/shubhampaul" target="_blank">
+                <img class="h-5 w-5" src="./img/twitter_bird_icon.svg" alt="Twitter"></a></li>
+          </ul>
+          <p class="w-1/3 sm:max-w-fit">Website crafted with passion by Shubham Paul.</p>
+        </div>
+      </footer>
+  </body>
+</html>
+
+

@@ -1,0 +1,105 @@
+body{
+    background-color: bisque;
+}
+
+table:hover{
+    transform: translateX(2px) translateY(-4px);
+    transition: transform 200ms linear;
+    background-color: rgb(49, 40, 28);
+    color: azure;
+    border-color: azure;
+}
+
+caption{
+    padding: 5px;
+    color: rgb(2, 19, 19);
+}
+
+div{
+    width: max-content;
+    border: 1px solid rgb(78, 20, 20);
+    border-radius: 20px;
+    padding: 8px;
+}
+
+table{
+    border: 1px solid brown;
+    border-collapse: collapse;
+}
+
+/* Reset */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  .content {
+    padding: 20px;
+  }
+  
+  /* Hide the checkbox */
+  #menuToggle {
+    display: none;
+  }
+  
+  /* Menu button styling */
+  .menu-button {
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 11;
+  }
+  
+  /* Side menu styling */
+  .side-menu {
+    position: fixed;
+    left: -250px; /* Offscreen */
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 10;
+  }
+  
+  /* Show side menu when the checkbox is checked */
+  #menuToggle:checked + .side-menu {
+    left: 0;
+  }
+  
+  /* Close button styling */
+  .close-btn {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 20px;
+    text-align: right;
+  }
+  
+  /* Menu link styles */
+  .side-menu nav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s;
+  }
+  
+  .side-menu nav a:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+    .menu-button {
+      display: inline-block;
+    }
+  }
+  
+  
